@@ -29,7 +29,7 @@ img {
     height: 90px;
     width: 90px;
     border-radius: 50%;
-    border-color: #D7BDE2;
+    border-color: #F4A261;
     border-width: 7px;
     border-style: solid;
 }
@@ -50,12 +50,12 @@ video {
     background-color: #F7CAC9;
 }
 
-#footer {
-  background-color: #F7CAC9;
+footer {
+  background-color: #F4A261;
   padding: 10px;
 }
 
-.gradient-background {
+#gradient-background {
     background: linear-gradient(to bottom, #D7BDE2, #A3C6A8);
     padding: 10px;
 }
