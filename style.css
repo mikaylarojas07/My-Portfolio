@@ -64,3 +64,5 @@ footer {
     background: linear-gradient(45deg, #F7CAC9, #D7BDE2);
     padding: 10px;
 }
+
+.clear {clear: both;}
