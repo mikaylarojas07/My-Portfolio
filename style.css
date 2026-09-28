@@ -15,20 +15,14 @@ body {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   background-color: #A3C6A8;
   padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: 0;
   text-align: center;
 }
 
@@ -36,9 +30,7 @@ img {
     height: 90px;
     width: 90px;
     border-radius: 0;
-    border-color: #F4A261;
-    border-width: 7px;
-    border-style: solid;
+    border: 7px solid #F4A261;
 }
 
 video {
@@ -53,16 +45,13 @@ video {
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
-    background-color: #F7CAC9;
+    background-color: #F4A261;
 }
 
 footer {
   background-color: #F4A261;
   padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: 0;
 }
 
 #gradient-background {
@@ -75,30 +64,19 @@ footer {
     padding: 10px;
 }
 
-.clear {clear: both;}
+.clear {clear: both;
+}
 
 form {
     background-color:#D7BDE2;
     padding: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0;
 }
 
 .card:hover{
-    background-color:#F4A261;
-    opacity: 1;
+    opacity: .7;
 }
 
-#keepintouch h2{
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 10px;
-    background-color: #F7CAC9
-}
 
 main p{
     margin-left: 10px;
@@ -107,4 +85,10 @@ main p{
 nav a{
     color: #FFF5E3;
     font-size: 18px;
+}
+
+#wrapper{
+    width: 95%;
+    margin: auto;
+    background-color:#F7CAC9; 
 }
