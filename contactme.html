@@ -7,47 +7,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Connecting to Google Fonts for custom fonts that are preloaded-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">     
-</head>
+</head> <!--Closing tag for head section-->
 
-<body>
-    <div id="wrapper">
-    <header>
-        <h1>Contact Me</h1>
+<body> <!--Opening tag for body section, where user will SEE webpage content-->
+    <div id="wrapper"> <!--Opening tag for "wrapper", which groups page content-->
+    <header> <!--Opening tag for header, which defines content located at the top of the webpage-->
+        <h1>Contact Me</h1> <!--Defines heading text (Contact Me) as h1, which is the largest heading size-->
         <nav> <!--Opening tag for navigation section, which will link to the other pages-->
             <a href="index.html">Home</a> | <!--Link to Home page-->
             <a href="aboutme.html">About Me</a> | <!--Link to About Me page-->
             <a href="projectspage.html">Projects</a> | <!--Link to Projects page-->
         </nav> <!--Closing tag for navigation section-->
-    </header>
-    <main>
-        <h2>Keep in touch!</h2> <!--using h2 because its smaller than h1-->
-        <form action="mailto:mikayla.rojas@ontariotechu.net" method="post" enctype="text/plain" name="form">
+    </header> <!--Closing tag for header section-->
+    <main> <!--Opening tag for main, which contains the main content of the webpage-->
+        <h2>Keep in touch!</h2> <!--Defining the form title using h2 because it's smaller than h1-->
+        <form action="mailto:mikayla.rojas@ontariotechu.net" method="post" enctype="text/plain" name="form"> <!--Defining the form's action as "mailto", so it mails to the user, defining encryption type as plain text, method as "post", meaning the data will be sent somewhere, and the form's name as "form"-->
+            <p> <!--Writing form fields as paragraph content-->
+                <label for="name">Name:</label> <!--Defines the label (what will be displayed in front of form field) for the input field "name"-->
+                <input type="text" name="name" size="32" id="name" required placeholder="Your name here"> <!--Defines a REQUIRED single-line text field called "name", which is 32 characters long and defines a placeholder to aid the user-->
+            </p> <!--Closing paragraph text for this form field-->
             <p>
-                <label for="name">Name:</label>
-                <input type="text" name="name" size="32" id="name" required placeholder="Your name here">
+                <label for="email">Email:</label> <!--Defines label for the "email" input field-->
+                <input name="email" type="email" size="40" id="email" required placeholder="youremail@example.com"> <!--Defines a REQUIRED single-line input field for email, the size is 40 characters, and defines placeholder text-->
             </p>
+            <!--Adding "required" to a form field means that the form will not submit if that field is empty-->
             <p>
-                <label for="email">Email:</label>
-                <input name="email" type="email" size="40" id="email" required placeholder="youremail@example.com">
-            </p>
-            <p>
-                <label for ="phone">Phone number:</label> <!--ask how to do phone VALIDATION-->
+                <label for ="phone">Phone number:</label> <!--Defines label for the "phone" input field-->
+                <!--Defines the input field for a phone number, including a required field and data validation, meaning the phone number must be in the format: 123-456-7890-->
                 <input name="phone" type="tel" id="phone" required placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <!--pattern from https://www.w3schools.com/tags/att_input_type_tel.asp-->
             </p>
             <p>
-                <label for="comments">Comments?</label><br>
-                <textarea name="comments" cols="60" rows="6" id="comments" placeholder="Share any of your thoughts here!"></textarea>
+                <label for="comments">Comments?</label><br> <!--Label for the "comments" input field, which is a textarea box-->
+                <!--"Comments" input field is not required, meaning users can submit the form even if they do not have any comments to share-->
+                <textarea name="comments" cols="60" rows="6" id="comments" placeholder="Share any of your thoughts here!"></textarea> <!--Defines a textarea box input field, which is a multiline text input area that is 60 characters per row and 6 rows long.-->
             </p>
-            <p><input type="submit" value="Click here to submit the form"></p>
-        </form>
-    </main>
+            <p><input type="submit" value="Click here to submit the form"></p> <!--***CHECK THIS***Submit button, when clicked the form will submit-->
+        </form> <!--Closing the form field-->
+    </main> <!--Closing the main area, because the form is the main aspect of this page-->
         
-    <div class="clear"> <!--this clears all prior formatting for whatever elements are within the float class-->
-        <footer>
-            <h5>© Site by Mikayla Rojas | mikayla.rojas@ontariotechu.net</h5>
+    <div class="clear"> <!--this clears all prior formatting so that the footer will be auto-aligned.-->
+        <footer> <!--Defines the footer, which describes content at the bottom of the webpage-->
+            <h5>© Site by Mikayla Rojas | mikayla.rojas@ontariotechu.net</h5> <!--Defining footer content (copyright, name, email)-->
         </footer> <!--closing the "footer" div-->
-    </div>
-    </div>
-</body>
-</html>
+    </div> <!--Closing the "clear" div-->
+    </div> <!--Closing the "wrapper" div, so anything outside of this would not be inside out main page content area-->
+</body> <!--Closing the body tag, no visible page content can exist outside of this-->
+</html> <!--Closing the html tag, no code can exist outside of this-->
 

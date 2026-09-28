@@ -9,23 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">     
 </head>
 
-<body>
-    <div id="wrapper">
-    <header>
-        <h1>My Projects</h1>
-        <nav> <!--Opening tag for navigation section, which will link to the other pages-->
+<body> <!--Opening tag for body section, which contains all visible page content-->
+    <div id="wrapper"> <!--Groups page content-->
+    <header> <!--Opening tag for header, which indicates the content that will appear at the top of the page-->
+        <h1>My Projects</h1> <!--Setting <h1> (largest header), as "My Projects", which will display at the top of the header-->
+        <nav> <!--Opening tag for navigation section, which will link this page to the other pages-->
             <a href="index.html">Home</a> | <!--Link to Home page-->
             <a href="aboutme.html">About Me</a> | <!--Link to About Me page-->
             <a href="contactme.html">Contact Me</a> | <!--Link to Contact Me page-->
         </nav> <!--Closing tag for navigation section-->
-    </header>
+    </header> <!--Closing tag for header section-->
 
     <main> <!--Where the page's main content will be stored-->
-        <article class="card">
-            <h2>TriviaTime - Python Quiz Game</h2>
-            <p>For my final project in INFR1101 - Intro to Python, I created an interactive quiz game using Python fundamentals. I implemented features like score tracking, an interactive menu, and multiple categories to choose from.</p>
-        </article>
-        <article class="card">
+        <article class="card"> <!--Defines an article, a self-contained piece of content on my page; the "card" class allows CSS to style as a card-->
+            <h2>TriviaTime - Python Quiz Game</h2> <!--Setting the heading as the title of the project-->
+            <p>For my final project in INFR1101 - Intro to Python, I created an interactive quiz game using Python fundamentals. I implemented features like score tracking, an interactive menu, and multiple categories to choose from.</p> <!--Paragraph text defining the project itself-->
+        </article> <!--Closing tag for article-->
+        <article class="card"> <!--"Card" is a class because the projects are going to be contained in four identical elements-->
             <h2>History of the Smartphone - Paper</h2>
             <p>The culminating essay for my History of Science and Technology course. In this essay, I traced the origins and evolution of the smartphone, all the way from the Roman Empire and their contributions to computing and mathematics.</p>
         </article>
@@ -37,12 +37,13 @@
             <h2>Leadership Through Fiction - Presentation</h2>
             <p>This group presentation for my Collaborative Leadership course explores how fictional characters can exemplify different leadership styles and approaches. My group chose to explore how Captain America from the Marvel saga represents different aspects of leadership.</p>
         </article>
-    </main>
-    <div class="clear"> <!--this clears all prior formatting for whatever elements are within the float class-->
+    </main> <!--Closing tag for main section-->
+    
+    <div class="clear"> <!--this clears all prior formatting-->
         <footer>
             <h5>© Site by Mikayla Rojas | mikayla.rojas@ontariotechu.net</h5>
-        </footer> <!--closing the "footer" div-->
-    </div>
-    </div>
-</body>
-</html>
+        </footer> <!--closing the "footer"-->
+    </div> <!--Closing tag for the "clear" div-->
+    </div> <!--Closing tag for the "wrapper" div-->
+</body> <!--Closing the body tag-->
+</html> <!--Closing tag for html-->
