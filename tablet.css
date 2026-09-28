@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+nav a{
+    font-size: large;
+    background-color: pink;
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px gray;
+
+}
+
+.card{
+    width: 80%;
+    margin: 15px;
+    padding: 15px
+}
+
+video{
+    max-width: 90%;
+}
+
+img{
+    max-width: 90%;
+}
+
+#wrapper{
+    width:90%
+}
+
+form{
+    width:85%;
+}

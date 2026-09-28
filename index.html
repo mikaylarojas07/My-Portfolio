@@ -3,6 +3,13 @@
 <head> <!--Opening tag for head section (non visible page content)-->
     <meta charset="UTF-8"> <!--Setting the character encoding to UTF-8 (so that special characters will display as intended)-->
     <title>My Portfolio</title> <!--Setting my webpage title to "My Portfolio", as it will show in the url bar-->
+    <meta name="viewport" content="width=device-width"> <!--forces to open right viewport-->
+    <!--style sheet is for full-size monitor (960px)-->
+    <link href="style.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+    <!--style sheet is for tablet screen (<960px, >480px)-->
+    <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:959px)">
+    <!--style sheet is for smartphone screen-->
+    <link href="mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
     <link rel="stylesheet" href="style.css"> <!--Linking to the CSS stylesheet, where I will be designing my webpage-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Connecting to Google Fonts for custom fonts that are preloaded-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +21,9 @@
     <header id="gradient-background"> <!--Unique header id because I want a gradient background only on this header, not on the others-->
         <h1>Mikayla Rojas</h1> <!--Setting main heading (h1 is the largest heading) as "Mikayla Rojas"-->
         <nav> <!--Opening tag for navigation section, which will link to the other pages in my portfolio-->
-            <a href="aboutme.html">About</a> | <!--Link to About Me page-->
-            <a href="projectspage.html">Projects</a> | <!--Link to Projects page-->
-            <a href="contactme.html">Contact</a> | <!--Link to Contact Me page-->
+            <a href="aboutme.html">About</a><!--Link to About Me page-->
+            <a href="projectspage.html">Projects</a><!--Link to Projects page-->
+            <a href="contactme.html">Contact</a><!--Link to Contact Me page-->
         </nav> <!--Closing tag for navigation section-->
     </header> <!--Closing tag for header section-->
 
