@@ -46,6 +46,7 @@ video {
     padding: 20px;
     margin: 20px;
     background-color: #F4A261;
+    opacity: 0.7;
 }
 
 footer {
@@ -74,12 +75,12 @@ form {
 }
 
 .card:hover{
-    opacity: .7;
+    opacity: 1;
 }
 
 
-main p{
-    margin-left: 10px;
+main h2{
+    padding: 10px;
 }
 
 nav a{
