@@ -1,7 +1,7 @@
 <!DOCTYPE html> <!--Defining the document type as HTML5 code-->
 <html lang="en"> <!--Setting the language as English-->
-<head> <!--Opening tag for head section-->
-    <meta charset="UTF-8"> <!--Setting the character encoding to UTF-8 (common, standard)-->
+<head> <!--Opening tag for head section (non visible page content)-->
+    <meta charset="UTF-8"> <!--Setting the character encoding to UTF-8 (so that special characters will display as intended)-->
     <title>My Portfolio</title> <!--Setting my webpage title to "My Portfolio", as it will show in the url bar-->
     <link rel="stylesheet" href="style.css"> <!--Linking to the CSS stylesheet, where I will be designing my webpage-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Connecting to Google Fonts for custom fonts that are preloaded-->
@@ -9,23 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">        
 </head> <!--Closing tag for head section-->
 
-<body> <!--Opening tag for body section, where user will see webpage content-->
-    <div id="wrapper">
+<body> <!--Opening tag for body section, where user will SEE webpage content-->
+    <div id="wrapper"> <!--Opening tag for the div I named "wrapper", where all the page content will appear within-->
     <header id="gradient-background"> <!--Unique header id because I want a gradient background only on this header, not on the others-->
         <h1>Mikayla Rojas</h1> <!--Setting main heading (h1 is the largest heading) as "Mikayla Rojas"-->
-        <nav> <!--Opening tag for navigation section, which will link to the other pages-->
+        <nav> <!--Opening tag for navigation section, which will link to the other pages in my portfolio-->
             <a href="aboutme.html">About</a> | <!--Link to About Me page-->
             <a href="projectspage.html">Projects</a> | <!--Link to Projects page-->
             <a href="contactme.html">Contact</a> | <!--Link to Contact Me page-->
         </nav> <!--Closing tag for navigation section-->
     </header> <!--Closing tag for header section-->
 
-    <div class="clear"> <!--this clears all prior formatting for whatever elements are within the float class, if any-->
-            <footer id="homepage-footer"> <!--Unique footer id because I want my gradient only on this footer, not on the others-->
-                <h5>© Site by Mikayla Rojas | mikayla.rojas@ontariotechu.net</h5>
-            </footer> <!--closing the footer-->
-    </div>
-    </div>
+    <div class="clear"> <!--this clears all prior formatting, if any-->
+        <footer id="homepage-footer"> <!--Unique footer id because I want my gradient only on this footer, not on the others-->
+            <h5>© Site by Mikayla Rojas | mikayla.rojas@ontariotechu.net</h5> <!--Footer text is h5, because I desired a smaller text size-->
+        </footer> <!--closing the footer-->
+    </div> <!--Closing tag for div class "clear"-->
+    </div> <!--Closing tag for "wrapper" div-->
 </body> <!--Closing tag for body section-->
 </html> <!--Closing tag for html section-->
 
