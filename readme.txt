@@ -3,8 +3,10 @@ Mikayla Rojas #101023576
 
 CITATIONS
 Phone number input validation adapted from: https://www.w3schools.com/tags/att_input_type_tel.asp, published by Refsnes Data
+Media Query integer strategy to avoid gaps adapted from: https://stevefenton.co.uk/blog/2023/05/unintentional-media-query-gaps/, Steve Fenton
 
-GUI/INTERFACE -- MUST FINISH
+
+GUI/INTERFACE
 My webpage uses three separate CSS files, each of them linked with a media query so that only one stylesheet applies at a time. 
 The stylesheet that is applied to the corresponding html file is based on the user's screen width. 
 - style.css for laptop.desktop (screens between 960px and up)
@@ -22,7 +24,11 @@ When switching from tablet to mobile, I designed my site so that the button size
 I also removed the hover features for tablet and mobile screens, because a feature that changes the opacity of an element when hovered over does not make sense on a touchscreen device. 
 Because I removed the .card:hover effect for tablet and mobile, I also changed the default opacity for the project card elements to 1 instead of 0.7, to increase the contrast for better viewing on smaller screens.
 
-****One challenge I faced when defining these dimensions came to my attention during texting/resizing. 
+One challenge I faced when defining these dimensions came to my attention during testing/resizing. 
+I noticed that when on the edge of a breakpoint (eg, at 959px or 480px), none of my CSS styling was applying at all, and it was as if I had no stylesheet linked. 
+After doing some research into these gaps, I then realized that pixels are not always integer values, which was contributing the the gap in styling when resizing along the edges of the breakpoints. 
+Since my breakpoints were initially set using whole numbers (eg, max-width: 959px, min-width: 960px), a fractional width like 959.5 would fail to match either condition, leaving a small gap because none of the stylesheets woul apply. 
+To fix this, I adjusted my max-width values to include a decimal (eg, 959.9px instead of 959px), successfully closing that gap, ensuring that no width falls outside all three media query ranges (desktop, tablet, mobile).
 
 
 COLOUR GRADIENTS
