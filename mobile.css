@@ -29,27 +29,26 @@ header {
 img {
     height: 90px;
     width: 90px;
-    border-radius: 0;
     border: 7px solid #F4A261;
-    max-width: 100%;
+    border-radius: 0;
 }
 
 video {
-    margin: 15px;
+    width: 90%;
+    margin: 15px auto;
     background-color: #F7CAC9;
     border: 15px #D7BDE2 solid; /*makes a border that is 2px wide, white, and solid (not dashed or dotted) */
     box-shadow: 10px 10px 5px;
-    max-width: 100%; /*Doesn't allow the video element to outgrow its container*/
     height: auto;
 }
 
 .card {
     border: 10px solid #D7BDE2;
     border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px; /*ty with 20px*/
+    margin: 10px auto;
     background-color: #F4A261;
-    opacity: 0.7;
+    width: 90%
 }
 
 footer {
@@ -77,9 +76,7 @@ form {
     margin: 0;
 }
 
-.card:hover{
-    opacity: 1;
-}
+/*Removed .card:hover for the tablet and mobile*/
 
 
 main h2{
@@ -87,11 +84,23 @@ main h2{
 }
 
 nav a{
-    font-size: 18px;
+    font-size: large;
+    background-color: pink;
+    display: block;
+    width: 80%;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px gray;
+
 }
 
 #wrapper{
     width: 95%;
     margin: auto;
     background-color:#F7CAC9; 
+}
+
+input, textarea{
+    width: 90%;
 }

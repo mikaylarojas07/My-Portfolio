@@ -31,15 +31,14 @@ img {
     width: 90px;
     border-radius: 0;
     border: 7px solid #F4A261;
-    max-width: 100%;
 }
 
 video {
-    margin: 15px;
+    margin: 15px auto;
+    display: block;
     background-color: #F7CAC9;
     border: 15px #D7BDE2 solid; /*makes a border that is 2px wide, white, and solid (not dashed or dotted) */
     box-shadow: 10px 10px 5px;
-    max-width: 100%; /*Doesn't allow the video element to outgrow its container*/
     height: auto;
 }
 
@@ -47,9 +46,9 @@ video {
     border: 10px solid #D7BDE2;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
     background-color: #F4A261;
-    opacity: 0.7;
+    width: 70%;
 }
 
 footer {
@@ -77,21 +76,30 @@ form {
     margin: 0;
 }
 
-.card:hover{
-    opacity: 1;
-}
+/*Removed the .card:hover feature for tablet and mobile*/
 
+nav a{
+    font-size: large;
+    background-color: pink;
+    display: block;
+    width: 25%;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px gray;
+}
 
 main h2{
     padding: 10px;
 }
 
-nav a{
-    font-size: 18px;
-}
 
 #wrapper{
-    width: 95%;
+    width: 90%;
     margin: auto;
     background-color:#F7CAC9; 
+}
+
+input, textarea{
+    width: 90%;
 }
