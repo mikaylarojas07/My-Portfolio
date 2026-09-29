@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document */
+/* The body tag style applies to all elements on the page */
+/* #FFF5E3 #A3C6A8 #D7BDE2 #F4A261 #F7CAC9 */
+
+/* Connecting Google Fonts from html to css */
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #FFF5E3;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #A3C6A8;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+img {
+    height: 90px;
+    width: 90px;
+    border-radius: 0;
+    border: 7px solid #F4A261;
+    max-width: 100%;
+}
+
+video {
+    margin: 15px;
+    background-color: #F7CAC9;
+    border: 15px #D7BDE2 solid; /*makes a border that is 2px wide, white, and solid (not dashed or dotted) */
+    box-shadow: 10px 10px 5px;
+    max-width: 100%; /*Doesn't allow the video element to outgrow its container*/
+    height: auto;
+}
+
+.card {
+    border: 10px solid #D7BDE2;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #F4A261;
+    opacity: 0.7;
+}
+
+footer {
+  background-color: #F4A261;
+  padding: 10px;
+  margin: 0;
+}
+
+#gradient-background {
+    background: linear-gradient(to bottom, #D7BDE2, #A3C6A8);
+    padding: 10px;
+}
+
+#homepage-footer {
+    background: linear-gradient(45deg, #F7CAC9, #D7BDE2);
+    padding: 10px;
+}
+
+.clear {clear: both;
+}
+
+form {
+    background-color:#D7BDE2;
+    padding: 10px;
+    margin: 0;
+}
+
+.card:hover{
+    opacity: 1;
+}
+
+
+main h2{
+    padding: 10px;
+}
+
+nav a{
+    font-size: 18px;
+}
+
+#wrapper{
+    width: 95%;
+    margin: auto;
+    background-color:#F7CAC9; 
+}
