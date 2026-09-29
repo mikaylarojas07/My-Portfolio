@@ -1,10 +1,10 @@
 Assignment 1 README file
 Mikayla Rojas #101023576
 
-Citations
+CITATIONS
 Phone number input validation adapted from: https://www.w3schools.com/tags/att_input_type_tel.asp, published by Refsnes Data
 
-GUI/Interface -- MUST FINISH
+GUI/INTERFACE -- MUST FINISH
 My webpage uses three separate CSS files, each of them linked with a media query so that only one stylesheet applies at a time. 
 The stylesheet that is applied to the corresponding html file is based on the user's screen width. 
 - style.css for laptop.desktop (screens between 960px and up)
@@ -17,17 +17,20 @@ Another reason is because I am familiar using these dimensions through lecture p
 At each break point, elements like navigation links, cards, images, and videos resize using percentage-based widths (fluid design), rather than fixed pixel values. 
 This is so that the layout can scale up and down with each viewport range so page content does not get cut off. 
 For example, .card elements shrink from their default desktop width to 70% screen width on tablets and 90% width on mobile, and the navigation links change from links on the desktop to buttons on tablet/desktop to remain easy to tap on a screen.
+When switching from tablet to mobile, I designed my site so that the button size for the navigation links increases, giving the user larger buttons to click on when on a smaller screen. 
 
+I also removed the hover features for tablet and mobile screens, because a feature that changes the opacity of an element when hovered over does not make sense on a touchscreen device. 
+Because I removed the .card:hover effect for tablet and mobile, I also changed the default opacity for the project card elements to 1 instead of 0.7, to increase the contrast for better viewing on smaller screens.
 
 ****One challenge I faced when defining these dimensions came to my attention during texting/resizing. 
 
 
-Colour Gradients
+COLOUR GRADIENTS
 My website's "Home" page contains both a linear gradient and an angle linear gradient. 
 The linear gradient can be seen in the page header, as a horizontal top-to-bottom gradient that gradually shifts from  #D7BDE2 to #A3C6A8. 
 The angled linear gradient can be seen in the page footer, as a diagonal linear gradient on a 45 degree angle that gradually shifts from #F7CAC9 to #D7BDE2
 
-Colour Scheme
+COLOUR SCHEME
 I used a custom colour scheme from Adobe with the following colours: #FFF5E3 #A3C6A8 #D7BDE2 #F4A261 #F7CAC9. 
 I chose this colour scheme because it is cohesive and the colours complement one another. I used Adobe's "Explore Colour Palettes" feature and searched for a colour scheme that I thought would bring my page to life.
 The neutral shades allow the more striking colours to pop, and the boldness makes my page look unique and aesthetically pleasing. 

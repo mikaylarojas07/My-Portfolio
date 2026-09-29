@@ -38,7 +38,7 @@ video {
     margin: 15px auto;
     background-color: #F7CAC9;
     border: 15px #D7BDE2 solid; /*makes a border that is 2px wide, white, and solid (not dashed or dotted) */
-    box-shadow: 10px 10px 5px;
+    box-shadow: 10px 10px 5px #A3C6A8;
     height: auto;
 }
 
@@ -91,7 +91,7 @@ nav a{
     margin: 5px;
     padding: 8px;
     border-radius: 10px;
-    box-shadow: 3px 3px 3px gray;
+    box-shadow: 3px 3px 3px #D7BDE2;
 
 }
 
