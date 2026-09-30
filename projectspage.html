@@ -1,22 +1,22 @@
 <!DOCTYPE html> <!--Defining the document type as HTML5 code-->
 <html lang="en"> <!--Setting the language as English-->
 <head> <!--Opening tag for head section-->
-    <meta charset="UTF-8"> <!--Setting the character encoding to UTF-8 (common, standard)-->
-    <title>My Projects</title> <!--Setting my webpage title to "My Projects", as it will show in the url bar-->
-    <meta name="viewport" content="width=device-width"> <!--forces to open right viewport-->
-    <!--style sheet is for full-size monitor (960px)-->
-    <link href="style.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
-    <!--style sheet is for tablet screen (<960px, >480px)-->
-    <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:959.9px)">
-    <!--style sheet is for smartphone screen-->
+    <meta charset="UTF-8"> <!--Setting the character encoding to UTF-8 (so that special characters will display correctly)-->
+    <title>My Projects</title> <!--Setting my webpage title to "My Projects", as it will show in the browser tab-->
+    <meta name="viewport" content="width=device-width"> <!--Makes the page layout match the device's screen width-->
+    <!--style sheet is for full-size monitor (960px and up)--> 
+    <link href="style.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)"> <!--Breakpoint: 960 and up (decimal-width strategy to avoid gaps adapted from https://stevefenton.co.uk/blog/2023/05/unintentional-media-query-gaps/)-->
+    <!--style sheet is for tablet screen (481px to 959.9px)-->
+    <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:959.9px)"> <!--Breakpoint: 481 - 959.9. Stops just below 960 to avoid overlap with style.css-->
+    <!--style sheet is for smartphone screens (480px and narrower)-->
     <link href="mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480.9px)">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Connecting to Google Fonts for custom fonts that are preloaded-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Connecting to Google Fonts for custom fonts that load faster-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">     
-</head>
+</head> <!--Closing tag for head section-->
 
 <body> <!--Opening tag for body section, which contains all visible page content-->
-    <div id="wrapper"> <!--Groups page content-->
+    <div id="wrapper"> <!--Opening tag for "wrapper" div, which groups page content-->
     <header> <!--Opening tag for header, which indicates the content that will appear at the top of the page-->
         <h1>My Projects</h1> <!--Setting <h1> (largest header), as "My Projects", which will display at the top of the header-->
         <nav> <!--Opening tag for navigation section, which will link this page to the other pages-->
@@ -26,19 +26,19 @@
         </nav> <!--Closing tag for navigation section-->
     </header> <!--Closing tag for header section-->
 
-    <main> <!--Where the page's main content will be stored-->
-        <article class="card"> <!--Defines an article, a self-contained piece of content on my page; the "card" class allows CSS to style as a card-->
+    <main> <!--Where the page's main content (my four projects) will be stored-->
+        <article class="card"> <!--Defines an article, a self-contained piece of content on my page; the "card" class allows CSS to style all four project articles identically in CSS-->
             <h2>TriviaTime - Python Quiz Game</h2> <!--Setting the heading as the title of the project-->
-            <section>
+            <section> <!--Section element groups the project overview (a subset of the article) under its own heading-->
                 <h3>Overview</h3>
                 <p>For my final project in INFR1101 - Intro to Python, I created an interactive quiz game using Python fundamentals.</p> <!--Paragraph text defining the project itself-->
-            </section>
-            <section>
+            </section> <!--Closing tag for the first section of this article-->
+            <section> <!--Section grouping the key details of the project-->
                 <h3>Key Aspects</h3>
-                <p>I implemented features like score tracking, an interactive menu, and multiple categories to choose from, demonstrating my understanding of variables, loops, functions, conditional statements, and user input.</p>
-            </section>
-        </article> <!--Closing tag for article-->
-        <article class="card"> <!--"Card" is a class because the projects are going to be contained in four identical elements-->
+                <p>I implemented features like score tracking, an interactive menu, and multiple categories to choose from, demonstrating my understanding of variables, loops, functions, conditional statements, and user input.</p> <!--Lists the key details of this project-->
+            </section> <!--Closing tag for the second section of this article-->
+        </article> <!--Closing tag for the TriviaTime article-->
+        <article class="card"> <!--Second project card-->
             <h2>History of the Smartphone - Paper</h2>
             <section>
                 <h3>Overview</h3>
@@ -48,8 +48,8 @@
                 <h3>Key Aspects</h3>
                 <p>In this essay, I traced the origins and evolution of the smartphone, from the Roman Empire and their contributions to computing and mathematics. The essay explored major developments in computing, telecommunications, and mobile technology, examining how innovations throughout history contributed to the modern smartphone</p>
             </section>
-        </article>
-        <article class="card">
+        </article> <!--Closing tag for the History of the Smartphone article-->
+        <article class="card"> <!--Third project card-->
             <h2>Understanding Selfhood Through Literature - Essay</h2>
             <section>
                 <h3>Overview</h3>
@@ -59,8 +59,8 @@
                 <h3>Key Aspects</h3>
                 <p>I explored concepts of identity, social norms, and self-performance using the ideas and frameworks of Max Weber, Georg Simmel, Erving Goffman, and other sociologists. I tied these frameworks into popular literary media works and their representation of selfhood, including The Office, Black Mirror, and Keeping Up With the Kardashians.</p>
             </section>
-        </article>
-        <article class="card">
+        </article> <!--Closing tag for the Understand Selfhood Through Literature article-->
+        <article class="card"> <!--Fourth and final project card-->
             <h2>Leadership Through Fiction - Presentation</h2>
             <section>
                 <h3>Overview</h3>
@@ -70,18 +70,18 @@
                 <h3>Key Aspects</h3>
                 <p> My group chose to explore how Captain America from the Marvel saga represents different aspects of leadership. We explored qualities such as teamwork, communication, trust, influence, and leading by example, connecting Captain America's actions to the many leadership styles and approaches.</p>
             </section>
-        </article>
+        </article> <!--Closing tag for the Leadership Through Fiction Article-->
     </main> <!--Closing tag for main section-->
-    <div class="clear">
-        <footer>
-            <p>
+    <div class="clear">  <!--Div with the class "clear"; this removes any existing float attributes for the <footer>-->
+        <footer> <!--Opens the footer tag, which contains the elements at the bottom of the webpage-->
+            <p> <!--Setting my footer text as paragraph text-->
                 © 2026 | Site by Mikayla Rojas 
-            </p>
-            <address>
-                <p><a href="mailto:mikayla.rojas@ontariotechu.net">mikayla.rojas@ontariotechu.net</a></p>
-            </address>
-        </footer> <!--closing the "footer"-->
-    </div>
+            </p> <!--Closing tag for paragraph content-->
+            <address> <!--Address element is used to indicate that my email address is an address type for SEO-->
+                <p><a href="mailto:mikayla.rojas@ontariotechu.net">mikayla.rojas@ontariotechu.net</a></p> <!--Linking my email address so that it is a clickable link-->
+            </address> <!--Closing tag for address-->
+        </footer> <!--Closing the "footer"-->
+    </div><!--Closing the "clear" div-->
     </div> <!--Closing tag for the "wrapper" div-->
 </body> <!--Closing the body tag-->
 </html> <!--Closing tag for html-->
