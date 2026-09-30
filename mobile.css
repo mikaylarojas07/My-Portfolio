@@ -45,7 +45,7 @@ video {
 .card {
     border: 10px solid #D7BDE2;
     border-radius: 10px;
-    padding: 10px; /*ty with 20px*/
+    padding: 10px; 
     margin: 10px auto;
     background-color: #F4A261;
     width: 90%
@@ -86,7 +86,7 @@ nav a{
     background-color: #F7CAC9;
     display: block;
     width: 80%;
-    margin: 5px;
+    margin: 5px auto;
     padding: 8px;
     border-radius: 10px;
     box-shadow: 3px 3px 3px #D7BDE2;

@@ -36,7 +36,7 @@ img {
 video {
     margin: 15px;
     background-color: #F7CAC9;
-    border: 15px #D7BDE2 solid; /*makes a border that is 2px wide, white, and solid (not dashed or dotted) */
+    border: 15px #D7BDE2 solid; /*makes a border that is 15px wide, white, and solid (not dashed or dotted) */
     box-shadow: 10px 10px 5px #A3C6A8;
 }
 
@@ -90,4 +90,6 @@ nav a{
     margin: auto;
     background-color:#F7CAC9; 
 }
+
+
 

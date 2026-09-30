@@ -3,7 +3,8 @@ Mikayla Rojas #101023576
 
 CITATIONS
 Phone number input validation adapted from: https://www.w3schools.com/tags/att_input_type_tel.asp, published by Refsnes Data
-Media Query integer strategy to avoid gaps adapted from: https://stevefenton.co.uk/blog/2023/05/unintentional-media-query-gaps/, Steve Fenton
+Media Query integer strategy to avoid gaps adapted from: https://stevefenton.co.uk/blog/2023/05/unintentional-media-query-gaps/, written by Steve Fenton
+Profile image code adapted from: https://www.w3schools.com/html/html_images.asp-->, published by Refsnes Data
 
 
 GUI/INTERFACE
@@ -35,6 +36,7 @@ COLOUR GRADIENTS
 My website's "Home" page contains both a linear gradient and an angle linear gradient. 
 The linear gradient can be seen in the page header, as a horizontal top-to-bottom gradient that gradually shifts from  #D7BDE2 to #A3C6A8. 
 The angled linear gradient can be seen in the page footer, as a diagonal linear gradient on a 45 degree angle that gradually shifts from #F7CAC9 to #D7BDE2
+
 
 COLOUR SCHEME
 I used a custom colour scheme from Adobe with the following colours: #FFF5E3 #A3C6A8 #D7BDE2 #F4A261 #F7CAC9. 

@@ -81,7 +81,7 @@ nav a{
     display: block;
     width: 25%;
     padding: 8px;
-    margin: 5px;
+    margin: 5px auto;
     border-radius: 15px;
     box-shadow: 5px 5px 3px #D7BDE2;
 }
