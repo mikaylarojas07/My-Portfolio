@@ -104,3 +104,7 @@ nav a{
 input, textarea{
     width: 90%;
 }
+
+address a{
+    color: #EDF1F4;
+}
