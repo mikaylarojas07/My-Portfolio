@@ -1,16 +1,16 @@
 <!DOCTYPE html> <!--Defining the document type as HTML5 code-->
 <html lang="en"> <!--Setting the language as English-->
 <head> <!--Opening tag for head section-->
-    <meta charset="UTF-8"> <!--Setting the character encoding to UTF-8 (common, standard)-->
+    <meta charset="UTF-8"> <!--Setting the character encoding to UTF-8 (so that special characters will display correctly)-->
     <title>About Me</title> <!--Setting my webpage title to "About Me", as it will show in the browser tab-->
-    <meta name="viewport" content="width=device-width"> <!--Makes the page match the device width instead of a -->
-    <!--style sheet is for full-size monitor (960px)-->
-    <link href="style.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
-    <!--style sheet is for tablet screen (<960px, >480px)-->
-    <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:959.9px)">
+    <meta name="viewport" content="width=device-width">  <!--Makes the page layout match the device's screen width-->
+    <!--style sheet is for full-size monitor (960px and up)-->
+    <link href="style.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)"> <!--Breakpoint: 960 and up (decimal-width strategy to avoid gaps adapted from https://stevefenton.co.uk/blog/2023/05/unintentional-media-query-gaps/)-->
+    <!--style sheet is for tablet screen (481px to 969.9px)-->
+    <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:959.9px)"> <!--Breakpoint: 481 - 959.9. Stops just below 960 to avoid overlap with style.css-->
     <!--style sheet is for smartphone screen-->
-    <link href="mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480.9px)">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Connecting to Google Fonts for custom fonts that are preloaded-->
+    <link href="mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480.9px)"> <!--Breakpoint: 0 - 480.9. Stops just under 481 so it never overlaps with tablet.css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Connecting to Google Fonts for custom fonts that load faster-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">     
 </head>
@@ -18,7 +18,7 @@
 <body> <!--Opening tag for body section, where user will see webpage content-->
     <div id="wrapper"> <!--Opening tag for "wrapper" div, which groups page content-->
     <header> <!--Opening tag for header section, because this content will be at the top of the page-->
-        <img src="aboutme.jpg" alt="About Me"> <!--Displaying an image of my profile picture, CODE FROM https://www.w3schools.com/html/html_images.asp-->
+        <img src="aboutme.jpg" alt="About Me"> <!--Displaying an image of my profile picture with alt text, CODE FROM https://www.w3schools.com/html/html_images.asp-->
         <h1>About Me!</h1> <!--Setting main heading (h1 is the largest heading) as "About Me!"-->
         <p>Hi, I'm Mikayla! I am currently a second-year Technology Management (BIT) Student at Ontario Tech University. I have a strong interest in technology and business. </p> <!--Setting paragraph text with my short intro-->
         <nav> <!--Opening tag for navigation section, which will link to the other pages-->
@@ -26,26 +26,26 @@
             <a href="projectspage.html">Projects</a><!--Link to Projects page-->
             <a href="contactme.html">Contact Me</a><!--Link to Contact Me page-->
         </nav> <!--Closing tag for navigation section-->
-    </header> <!--Closing tag for header section, because remaining code will not display at the top of the page-->
+    </header> <!--Closing tag for header section, because the remaining code will not display at the top of the page-->
     
     <main> <!--Opening tag for <main> section, where the main content of the webpage will be-->
-        <video width="320" height="240" controls poster="aboutme.png"> <!--Opening tag for video element including controls, dimensions, and poster-->
+        <video width="320" height="240" controls poster="aboutme.png"> <!--Opening tag for video element including video controls, dimensions, and poster-->
             <source src="aboutme.mp4" type="video/mp4"> <!--Specifying the video file in MP4 format-->
             <source src="aboutme.ogv" type="video/ogg"> <!--Specifying the video file in OGG format-->
             Your browser does not support the video tag. <!--Error message that will display for browsers that do not support HTML5-->
         </video> <!--Closing tag for video section-->
     </main> <!--Closing tag for the main section of the webpage-->
 
-    <div class="clear">
+    <div class="clear"> <!--Div with the class "clear"; this removes any existing float attributes for the <footer>-->
         <footer> <!--Opens the footer tag, which contains the elements at the bottom of the webpage-->
-            <p>
+            <p> <!--Setting my footer text as paragraph text-->
                 © 2026 | Site by Mikayla Rojas 
-            </p>
-            <address>
-                <p><a href="mailto:mikayla.rojas@ontariotechu.net">mikayla.rojas@ontariotechu.net</a></p>
-            </address>
-        </footer> <!--closing the "footer"-->
-    </div> <!--closing clear div-->
+            </p> <!--Closing tag for paragraph content-->
+            <address> <!--Address element is used to indicate that my email address is an address type for SEO-->
+                <p><a href="mailto:mikayla.rojas@ontariotechu.net">mikayla.rojas@ontariotechu.net</a></p><!--Linking my email address so that it is a clickable link-->
+            </address><!--Closing tag for address-->
+        </footer> <!--Closing the "footer"-->
+    </div> <!--Closing tag for "clear" div-->
     </div> <!--Closing the "wrapper" div-->
 </body> <!--Closing tag for body section-->
 </html> <!--Closing tag for html section-->
