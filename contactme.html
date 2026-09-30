@@ -1,16 +1,16 @@
 <!DOCTYPE html> <!--Defining the document type as HTML5 code-->
 <html lang="en"> <!--Setting the language as English-->
 <head> <!--Opening tag for head section-->
-    <meta charset="UTF-8"> <!--Setting the character encoding to UTF-8 (common, standard)-->
-    <title>Contact Me</title> <!--Setting my webpage title to "Contact Me", as it will show in the url bar-->
-    <meta name="viewport" content="width=device-width"> <!--forces to open right viewport-->
-    <!--style sheet is for full-size monitor (960px)-->
+    <meta charset="UTF-8"> <!--Setting the character encoding to UTF-8 (so that special characters will display correctly)-->
+    <title>Contact Me</title> <!--Setting my webpage title to "Contact Me", as it will show in the browser tab-->
+    <meta name="viewport" content="width=device-width">  <!--Makes the page layout match the device's screen width-->
+    <!--style sheet is for full-size monitor (960px and up)-->
     <link href="style.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
-    <!--style sheet is for tablet screen (<960px, >480px)-->
+    <!--style sheet is for tablet screen (481px to 959.9px)-->
     <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:959.9px)">
-    <!--style sheet is for smartphone screen-->
+    <!--style sheet is for smartphone screens (480px and narrower)-->
     <link href="mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480.9px)">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Connecting to Google Fonts for custom fonts that are preloaded-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Connecting to Google Fonts for custom fonts that load faster-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">     
 </head> <!--Closing tag for head section-->
@@ -27,7 +27,8 @@
     </header> <!--Closing tag for header section-->
     <main> <!--Opening tag for main, which contains the main content of the webpage-->
         <h2>Keep in touch!</h2> <!--Defining the form title using h2 because it's smaller than h1-->
-        <form action="mailto:mikayla.rojas@ontariotechu.net" method="post" enctype="text/plain" name="form"> <!--Defining the form's action as "mailto", which opens the user's email app with a message addressed to me, defining encryption type as plain text, method as "post", meaning the data will be sent somewhere, and the form's name as "form"-->
+        <!--Defining the form's action as "mailto", which opens the user's email app with a message addressed to me, defining encoding type as plain text, method as "post", meaning the data will be sent somewhere, and the form's name as "form"-->  
+        <form action="mailto:mikayla.rojas@ontariotechu.net" method="post" enctype="text/plain" name="form"> 
             <p> <!--Writing form fields as paragraph content-->
                 <label for="name">Name:</label> <!--Defines the label (what will be displayed in front of form field) for the input field "name"-->
                 <input type="text" name="name" size="32" id="name" required placeholder="Your name here"> <!--Defines a REQUIRED single-line text field called "name", which is 32 characters long and defines a placeholder to aid the user-->
@@ -39,27 +40,28 @@
             <!--Adding "required" to a form field means that the form will not submit if that field is empty-->
             <p>
                 <label for ="phone">Phone number:</label> <!--Defines label for the "phone" input field-->
-                <!--Defines the input field for a phone number, including a required field and data validation, meaning the phone number must be in the format: 123-456-7890-->
-                <input name="phone" type="tel" id="phone" required placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <!--pattern from https://www.w3schools.com/tags/att_input_type_tel.asp-->
+                <!--Defines the input field for a phone number, including a required field and data validation, meaning the phone number must be present and in the format: 123-456-7890-->
+                <input name="phone" type="tel" id="phone" required placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <!--"pattern" adapted from https://www.w3schools.com/tags/att_input_type_tel.asp-->
             </p>
             <p>
                 <label for="comments">Comments?</label><br> <!--Label for the "comments" input field, which is a textarea box-->
+                <!--<br> creates a line break, placing the textarea on the line below the label-->
                 <!--"Comments" input field is not required, meaning users can submit the form even if they do not have any comments to share-->
                 <textarea name="comments" cols="60" rows="6" id="comments" placeholder="Share any of your thoughts here!"></textarea> <!--Defines a textarea box input field, which is a multiline text input area that is 60 characters per row and 6 rows long.-->
             </p>
             <p><input type="submit" value="Click here to submit the form"></p> <!--Submit button, when clicked the form will submit-->
         </form> <!--Closing the form field-->
     </main> <!--Closing the main area, because the form is the main aspect of this page-->
-    <div class="clear"> 
+    <div class="clear"> <!--Div with the class "clear"; this removes any existing float attributes for the <footer>-->
         <footer> <!--Defines the footer, which describes content at the bottom of the webpage-->
-            <p>
+            <p> <!--Setting my footer text as paragraph text-->
                 © 2026 | Site by Mikayla Rojas 
-            </p>
-            <address>
-                <p><a href="mailto:mikayla.rojas@ontariotechu.net">mikayla.rojas@ontariotechu.net</a></p>
-            </address>
+            </p> <!--Closing tag for paragraph content-->
+            <address> <!--Address element is used to indicate that my email address is an address type for SEO-->
+                <p><a href="mailto:mikayla.rojas@ontariotechu.net">mikayla.rojas@ontariotechu.net</a></p><!--Linking my email address so that it is a clickable link-->
+            </address><!--Closing tag for address-->
         </footer> <!--closing the "footer"-->
-    </div> 
+    </div> <!--Closing the "clear" div-->
     </div> <!--Closing the "wrapper" div, so anything outside of this would not be inside our main page content area-->
 </body> <!--Closing the body tag, no visible page content can exist outside of this-->
 </html> <!--Closing the html tag, no code can exist outside of this-->
