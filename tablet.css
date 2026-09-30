@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 /* The body tag style applies to all elements on the page */
-/* #FFF5E3 #A3C6A8 #D7BDE2 #F4A261 #F7CAC9 */
+/* New high contrast color scheme: 
+#72023A #FB05A1 #03020C #EDF1F4 #A84D02*/
 
 /* Connecting Google Fonts from html to css */
 .dm-serif-display-regular {
@@ -11,7 +12,8 @@
 }
 
 body {
-  background-color: #FFF5E3;
+  background-color: #EDF1F4;
+  color: #03020C;
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
@@ -20,7 +22,8 @@ body {
 }
 
 header {
-  background-color: #A3C6A8;
+  background-color: #72023A;
+  color: #EDF1F4;
   padding: 10px;
   margin: 0;
   text-align: center;
@@ -30,45 +33,47 @@ img {
     height: 90px;
     width: 90px;
     border-radius: 0;
-    border: 7px solid #F4A261;
+    border: 7px solid #A84D02;
 }
 
 video {
     margin: 15px auto;
     display: block;
-    background-color: #F7CAC9;
-    border: 15px #D7BDE2 solid; /*makes a border that is 2px wide, white, and solid (not dashed or dotted) */
-    box-shadow: 10px 10px 5px #A3C6A8;
+    background-color: #FB05A1;
+    border: 15px #A84D02 solid; /*makes a border that is 2px wide, white, and solid (not dashed or dotted) */
+    box-shadow: 10px 10px 5px #03020C;
     height: auto;
 }
 
 .card {
-    border: 10px solid #D7BDE2;
+    border: 10px solid #72023A;
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
-    background-color: #F4A261;
+    background-color: #FB05A1;
     width: 70%;
 }
 
 footer {
-  background-color: #F4A261;
+  background-color: #A84D02;
+  color: #EDF1F4;
   padding: 10px;
   margin: 0;
 }
 
 #gradient-background {
-    background: linear-gradient(to bottom, #D7BDE2, #A3C6A8);
+    background: linear-gradient(to top, #EDF1F4, #FB05A1);
     padding: 10px;
 }
 
 #homepage-footer {
-    background: linear-gradient(45deg, #F7CAC9, #D7BDE2);
+    background: linear-gradient(45deg, #72023A, #A84D02,);
     padding: 10px;
 }
 
 form {
-    background-color:#D7BDE2;
+    background-color:#FB05A1;
+    color: #03020C;
     padding: 10px;
     margin: 0;
 }
@@ -77,24 +82,26 @@ form {
 
 nav a{
     font-size: large;
-    background-color: #F7CAC9;
+    background-color: #A84D02;
+    color: #EDF1F4;
     display: block;
     width: 25%;
     padding: 8px;
     margin: 5px auto;
     border-radius: 15px;
-    box-shadow: 5px 5px 3px #D7BDE2;
+    box-shadow: 5px 5px 3px #03020C;
 }
 
 main h2{
     padding: 10px;
+    color: #72023A;
 }
 
 
 #wrapper{
     width: 90%;
     margin: auto;
-    background-color:#F7CAC9; 
+    background-color:#FB05A1; 
 }
 
 input, textarea{
