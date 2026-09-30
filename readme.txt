@@ -5,7 +5,7 @@ CITATIONS
 Phone number input validation adapted from: https://www.w3schools.com/tags/att_input_type_tel.asp, published by Refsnes Data
 Media Query integer strategy to avoid gaps adapted from: https://stevefenton.co.uk/blog/2023/05/unintentional-media-query-gaps/, written by Steve Fenton
 Profile image code adapted from: https://www.w3schools.com/html/html_images.asp-->, published by Refsnes Data
-
+Overflow property code adapted from: https://www.w3schools.com/css/css_overflow.asp, Refsnes Data
 
 GUI/INTERFACE
 My webpage uses three separate CSS files, each of them linked with a media query so that only one stylesheet applies at a time. 
@@ -25,7 +25,7 @@ I also created a different, higher-contrast colour scheme for my website when th
 
 Another difference between my webpage's desktop and tablet/mobile viewing is that on desktop monitors or PCs, my projects page displays my articles in two columns of two, whereas my tablet and mobile visitors will see the projects one by one, in only one single column. 
 I made this decision because I know that less columns are typically better when discussing smaller screens, so instead of cramming my project cards into two columns on smaller device screens, I simply made the page into one column.
- 
+
 I also removed the hover features for tablet and mobile screens, because a feature that changes the opacity of an element when hovered over does not make sense on a touchscreen device. 
 Because I removed the .card:hover effect for tablet and mobile, I also changed the default opacity for the project card elements to 1 instead of 0.7, to increase the contrast for better viewing on smaller screens.
 
