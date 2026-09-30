@@ -21,7 +21,11 @@ At each break point, elements like navigation links, cards, images, and videos r
 This is so that the layout can scale up and down with each viewport range so page content does not get cut off. 
 For example, .card elements shrink from their default desktop width to 70% screen width on tablets and 90% width on mobile, and the navigation links change from links on the desktop to buttons on tablet/desktop to remain easy to tap on a screen.
 When switching from tablet to mobile, I designed my site so that the button size for the navigation links increases, giving the user larger buttons to click on when on a smaller screen. 
+I also created a different, higher-contrast colour scheme for my website when the viewport changes from desktop to tablet or mobile, so that users on smaller screens with weaker back lighting can view my page clearly.
 
+Another difference between my webpage's desktop and tablet/mobile viewing is that on desktop monitors or PCs, my projects page displays my articles in two columns of two, whereas my tablet and mobile visitors will see the projects one by one, in only one single column. 
+I made this decision because I know that less columns are typically better when discussing smaller screens, so instead of cramming my project cards into two columns on smaller device screens, I simply made the page into one column.
+ 
 I also removed the hover features for tablet and mobile screens, because a feature that changes the opacity of an element when hovered over does not make sense on a touchscreen device. 
 Because I removed the .card:hover effect for tablet and mobile, I also changed the default opacity for the project card elements to 1 instead of 0.7, to increase the contrast for better viewing on smaller screens.
 
@@ -39,7 +43,12 @@ The angled linear gradient can be seen in the page footer, as a diagonal linear 
 
 
 COLOUR SCHEME
-I used a custom colour scheme from Adobe with the following colours: #FFF5E3 #A3C6A8 #D7BDE2 #F4A261 #F7CAC9. 
+For my desktop webpage, I used a custom colour scheme from Adobe with the following colours: #FFF5E3 #A3C6A8 #D7BDE2 #F4A261 #F7CAC9. 
 I chose this colour scheme because it is cohesive and the colours complement one another. I used Adobe's "Explore Colour Palettes" feature and searched for a colour scheme that I thought would bring my page to life.
 The neutral shades allow the more striking colours to pop, and the boldness makes my page look unique and aesthetically pleasing. 
+
+However, for my tablet and mobile screen visitors, I used a different colour scheme from Adobe, one that is higher contrast and easier to view on smaller screens or in outdoor settings. 
+I used the following colours for this second colour pallette: #72023A #FB05A1 #03020C #EDF1F4 #A84D02. 
+The name of this pallette on Adobe.com is called "Calender - High Contrast". I discovered it by searching up "high contrast colour pallettes", so I would find the right blend of colours. 
+
 
