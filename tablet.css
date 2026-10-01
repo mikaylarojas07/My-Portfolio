@@ -53,6 +53,7 @@ video {
 
 .card {
     border: 10px solid #72023A;
+    color: #EDF1F4;
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
@@ -120,4 +121,11 @@ input, textarea{
 /*Links inside <address> (my email link in the footer)*/
 address a{
     color: #EDF1F4; /*Off-white colour, so it is readable*/
+}
+
+section{
+    background-color: #72023A; /*pink*/
+    padding: 8px; /*Space between the section's content and its own border*/
+    margin: 5px;
+    border-radius: 10px; /*Rounded corners*/
 }

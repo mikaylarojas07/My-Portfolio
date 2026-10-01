@@ -14,6 +14,13 @@
   font-style: normal;
 }
 
+section{
+    background-color: #F7CAC9; /*pink*/
+    padding: 5px; /*Space between the section's content and its own border*/
+    margin: 5px;
+    border-radius: 10px; /*Rounded corners*/
+}
+
 /*"body" affects everything visible on the page*/
 body {
   background-color: #FFF5E3; /*cream page background colour*/
