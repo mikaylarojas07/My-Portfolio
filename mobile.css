@@ -47,6 +47,7 @@ video {
 
 .card {
     border: 10px solid #72023A;
+    opacity: 1; /*Ensures the card is fully opaque, not transparent*/
     border-radius: 10px;
     padding: 10px; 
     margin: 10px auto;
