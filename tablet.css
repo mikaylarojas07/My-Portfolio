@@ -1,7 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
-/* The body tag style applies to all elements on the page */
-/* New high contrast color scheme: 
+
+/*This styling only applies to tablet screens (aka, viewports between 481px and 959.9px in width*/
+
+/* New HIGH CONTRAST color scheme: 
 #72023A #FB05A1 #03020C #EDF1F4 #A84D02*/
 
 /* Connecting Google Fonts from html to css */
@@ -11,6 +13,7 @@
   font-style: normal;
 }
 
+/*Page wide defaults*/
 body {
   background-color: #EDF1F4;
   color: #03020C;
@@ -21,6 +24,7 @@ body {
   padding: 0;
 }
 
+/*Top section of each page*/
 header {
   background-color: #72023A;
   color: #EDF1F4;
@@ -29,6 +33,7 @@ header {
   text-align: center;
 }
 
+/*Styles the profile picture image on "about me!"*/
 img {
     height: 90px;
     width: 90px;
@@ -36,6 +41,7 @@ img {
     border: 7px solid #A84D02;
 }
 
+/*Styles the video element on the "About Me!" page*/
 video {
     margin: 15px auto;
     display: block;
@@ -51,7 +57,7 @@ video {
     padding: 20px;
     margin: 20px auto;
     background-color: #EDF1F4;
-    width: 70%;
+    width: 70%; /*On tablets, the card now takes up 70% of the wrapper's width, allowing for a single-column design on the Projects Page*/
 }
 
 footer {
@@ -78,36 +84,40 @@ form {
     margin: 0;
 }
 
-/*Removed the .card:hover feature for tablet and mobile*/
+/*Removed the .card:hover feature for tablet and mobile, because you cannot hover on touchscreen*/
 
+/*Styling the navigation links as large, clickable buttons for each usage on smaller screens*/
 nav a{
-    font-size: large;
+    font-size: large; /*keyword size*/
     background-color: #A84D02;
-    color: #EDF1F4;
-    display: block;
-    width: 25%;
-    padding: 8px;
-    margin: 5px auto;
-    border-radius: 15px;
-    box-shadow: 5px 5px 3px #03020C;
+    color: #EDF1F4; /*Setting link text as white for contrast*/
+    display: block; /*Puts each link on its own line so they are stacked vertically*/
+    width: 25%; /*Takes up 25% of the header content's width*/
+    padding: 8px; /*Adds space inside each button, creating a bigger space for users to tap on*/
+    margin: 5px auto; /*5px above and below each button, and "auto" centres it*/
+    border-radius: 15px; /*Rounded corners*/
+    box-shadow: 5px 5px 3px #03020C; /*Small drop shadow to give the buttons a raised effect*/
 }
 
+/*Only selects h2 headings inside <main>*/
 main h2{
     padding: 10px;
     color: #72023A;
 }
 
-
+/*Main container div*/
 #wrapper{
-    width: 90%;
-    margin: auto;
-    background-color:#FB05A1; 
+    width: 90%; /*Wrapper takes up 90% of the entire browser window's width, slightly smaller than style.css*/
+    margin: auto; /*auto splits leftover space evenly, centering the wrapper*/
+    background-color:#FB05A1; /*Background colour of the wrapper*/
 }
 
+/*Applies to every input and textarea inside the form on Contact Me */
 input, textarea{
-    width: 90%;
+    width: 90%; /*Each input field in the form takes up 90% of the form's width, so the field sizes scale with the screen*/
 }
 
+/*Links inside <address> (my email link in the footer)*/
 address a{
-    color: #EDF1F4;
+    color: #EDF1F4; /*Off-white colour, so it is readable*/
 }
