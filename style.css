@@ -41,8 +41,7 @@ header {
 
 /*Applies to every image on this site (which is only the profile image on "About me!"*/
 img {
-    height: 90px; /*Image is 90 pixels tall*/
-    width: 90px; /*Image is 90 pixels wide*/
+    width: 10%; /*Image takes up 10% of the width of the header*/
     border-radius: 0; /*Square corners, 50% would make it a circle*/
     border: 7px solid #F4A261; /*7 pixel orange frame around the image*/
 }

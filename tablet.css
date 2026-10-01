@@ -35,8 +35,7 @@ header {
 
 /*Styles the profile picture image on "about me!"*/
 img {
-    height: 90px;
-    width: 90px;
+    width: 20%; /*Image takes up 20% of the width of the header*/
     border-radius: 0;
     border: 7px solid #A84D02;
 }
