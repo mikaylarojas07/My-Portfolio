@@ -37,7 +37,7 @@ img {
 }
 
 video {
-    width: 90%;
+    width: 90%; /*Video takes up 90% of the width of the wrapper*/
     margin: 15px auto;
     background-color: #FB05A1;
     border: 15px #A84D02 solid; /*makes a border that is 2px wide, white, and solid (not dashed or dotted) */
@@ -52,7 +52,7 @@ video {
     padding: 10px; 
     margin: 10px auto;
     background-color: #EDF1F4;
-    width: 90%;
+    width: 80%; /*The card takes up 80% of the width of the wrapper*/
     color: #EDF1F4;
 }
 
@@ -75,50 +75,55 @@ footer {
 
 
 form {
-    background-color:#FB05A1;
-    color: #03020C;
+    background-color:#FB05A1; /*Form background is pink*/
+    color: #03020C; /*Form text is black*/
     padding: 10px;
     margin: 0;
 }
 
 /*Removed .card:hover for the tablet and mobile*/
 
-
+/*Only selects h2 headings inside <main>, so this applies only to "Keep in Touch!" and project titles*/
 main h2{
     padding: 10px;
     color: #72023A;
 }
 
+/*Styling the navigation links as larger, clickable buttons for usage on mobile screens*/
 nav a{
-    font-size: large;
+    font-size: x-large; /*Even larger text size for the links on mobile screens*/
     background-color: #A84D02;
     color: #EDF1F4;
-    display: block;
-    width: 80%;
-    margin: 5px auto;
+    display: block; /*Puts each link on its own line so they are stacked vertically*/
+    width: 80%; /*Takes up 80% of the header content's width (more clickable space)*/
+    margin: 5px auto; /*5px above and below each button, and "auto" centres it*/
     padding: 8px;
     border-radius: 10px;
     box-shadow: 3px 3px 3px #03020C;
 
 }
 
+/*Main content container div*/
 #wrapper{
-    width: 95%;
+    width: 95%; /*The wrapper will take up 90% of the browser window's width, slightly larger than tablet.css*/
     margin: auto;
     background-color:#FB05A1; 
 }
 
+/*Applies to every input and textarea inside the form on Contact Me */
 input, textarea{
     width: 90%;
 }
 
+/*Links inside <address> (my email link in the footer)*/
 address a{
     color: #EDF1F4;
 }
 
+/*Styling the section element on the Projects page within each article*/
 section{
-    background-color: #72023A; /*pink*/
+    background-color: #72023A; /*burgundy color*/
     padding: 8px; /*Space between the section's content and its own border*/
-    margin: 5px;
+    margin: 5px; /*Space between the section's border and the article's border*/
     border-radius: 10px; /*Rounded corners*/
 }

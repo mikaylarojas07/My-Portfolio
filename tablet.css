@@ -43,6 +43,7 @@ img {
 /*Styles the video element on the "About Me!" page*/
 video {
     margin: 15px auto;
+    width: 80%; /*Video takes up 80% of the width of the wrapper*/
     display: block;
     background-color: #FB05A1;
     border: 15px #A84D02 solid; /*makes a border that is 2px wide, white, and solid (not dashed or dotted) */
@@ -100,7 +101,7 @@ nav a{
     box-shadow: 5px 5px 3px #03020C; /*Small drop shadow to give the buttons a raised effect*/
 }
 
-/*Only selects h2 headings inside <main>*/
+/*Only selects h2 headings inside <main>, so this applies only to "Keep in Touch!" and project titles*/
 main h2{
     padding: 10px;
     color: #72023A;
@@ -124,7 +125,7 @@ address a{
 }
 
 section{
-    background-color: #72023A; /*pink*/
+    background-color: #72023A; /*burgundy color*/
     padding: 8px; /*Space between the section's content and its own border*/
     margin: 5px;
     border-radius: 10px; /*Rounded corners*/
