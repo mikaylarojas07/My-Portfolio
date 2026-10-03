@@ -12,8 +12,9 @@
   font-style: normal;
 }
 
+/*Applies to the entire screen*/
 body {
-  background-color: #EDF1F4;
+  background-color: #EDF1F4; /*Light gray background color for the entire page*/
   color: #03020C;
   font-family: "DM Serif Display", serif;
   font-weight: 400;
@@ -22,103 +23,72 @@ body {
   padding: 0;
 }
 
+/*Main content container div*/
+#wrapper{
+    width: 95%; /*The wrapper will take up 95% of the browser window's width, slightly larger than tablet.css*/
+    margin: auto; /*The automatic margins split the remaining space equally, centering the wrapper*/
+    background-color:#FB05A1; /*Background color of the wrapper is pink*/
+}
+
+
+/*Styling the header for mobile screens*/
 header {
   background-color: #72023A;
   color: #EDF1F4;
-  padding: 10px;
-  margin: 0;
-  text-align: center;
+  padding: 10px; /*Space between the header's content and its own border*/
+  margin: 0; /*No space between the header's border and the browser window's edge*/
+  text-align: center; /*Centers the text inside the header*/
 }
 
-img {
-    width: 30%; /*Image takes up 30% of the width of the header*/
-    border: 7px solid #A84D02;
-    border-radius: 0;
-}
-
-video {
-    width: 90%; /*Video takes up 90% of the width of the wrapper*/
-    margin: 15px auto;
-    background-color: #FB05A1;
-    border: 15px #A84D02 solid; /*makes a border that is 2px wide, white, and solid (not dashed or dotted) */
-    box-shadow: 10px 10px 5px #03020C;
-    height: auto;
-}
-
-.card {
-    border: 10px solid #72023A;
-    opacity: 1; /*Ensures the card is fully opaque, not transparent*/
-    border-radius: 10px;
-    padding: 10px; 
-    margin: 10px auto;
-    background-color: #EDF1F4;
-    width: 80%; /*The card takes up 80% of the width of the wrapper*/
-    color: #EDF1F4;
-}
-
-footer {
-  background-color: #A84D02;
-  padding: 10px;
-  margin: 0;
-  color: #EDF1F4;
-}
-
+/*Calling a custom header id to define a gradient header for the homepage only*/
 #gradient-background {
-    background: linear-gradient(to top, #EDF1F4, #FB05A1);
-    padding: 10px;
-}
-
-#homepage-footer {
-    background: linear-gradient(45deg, #72023A, #A84D02);
-    padding: 10px;
-}
-
-
-form {
-    background-color:#FB05A1; /*Form background is pink*/
-    color: #03020C; /*Form text is black*/
-    padding: 10px;
-    margin: 0;
-}
-
-/*Removed .card:hover for the tablet and mobile*/
-
-/*Only selects h2 headings inside <main>, so this applies only to "Keep in Touch!" and project titles*/
-main h2{
-    padding: 10px;
-    color: #72023A;
+    background: linear-gradient(to top, #EDF1F4, #FB05A1); /*Gradient from light gray at the top to pink at the bottom*/
+    padding: 10px; /*Space between the header's content and its own border (for spacing between text and border)*/
 }
 
 /*Styling the navigation links as larger, clickable buttons for usage on mobile screens*/
 nav a{
     font-size: x-large; /*Even larger text size for the links on mobile screens*/
-    background-color: #A84D02;
-    color: #EDF1F4;
+    background-color: #A84D02; /*Orange background color for the links*/
+    color: #EDF1F4; /*Setting link text as light gray for contrast*/
     display: block; /*Puts each link on its own line so they are stacked vertically*/
     width: 80%; /*Takes up 80% of the header content's width (more clickable space)*/
     margin: 5px auto; /*5px above and below each button, and "auto" centres it*/
-    padding: 8px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 3px #03020C;
-
+    padding: 8px; /*Adds space inside each button, creating a bigger space for users to tap on*/
+    border-radius: 10px; /*Rounded corners on the buttons*/
+    box-shadow: 3px 3px 3px #03020C; /*Small drop shadow to give the buttons a raised effect*/
 }
 
-/*Main content container div*/
-#wrapper{
-    width: 95%; /*The wrapper will take up 95% of the browser window's width, slightly larger than tablet.css*/
-    margin: auto;
-    background-color:#FB05A1; 
+/*Styling the profile image for mobile screens*/
+img {
+    width: 30%; /*Image takes up 30% of the width of the header*/
+    border: 7px solid #A84D02; /*makes a border that is 7px wide, orange, and solid (not dashed or dotted) */
+    border-radius: 0; /*No rounded corners on the image*/
 }
 
-/*Applies to every input and textarea inside the form on Contact Me */
-input, textarea{
-    width: 90%;
+/*Styling the video for mobile screens*/
+video {
+    width: 90%; /*Video takes up 90% of the width of the wrapper*/
+    margin: 15px auto; /*Centers the video and adds 15px of space above and below it*/
+    background-color: #FB05A1;
+    border: 15px #A84D02 solid; /*makes a border that is 2px wide, white, and solid (not dashed or dotted) */
+    box-shadow: 10px 10px 5px #03020C; /*Adds a shadow to the video that is offset 10px to the right and 10px down, with a blur of 5px, and is black in color*/
+    height: auto; 
 }
 
-/*Links inside <address> (my email link in the footer)*/
-address a{
-    color: #EDF1F4;
+/*Styling the project cards for mobile screens*/
+.card {
+    border: 10px solid #72023A; /*makes a border that is 10px wide, burgundy, and solid*/
+    opacity: 1; /*Ensures the card is fully opaque, not transparent*/
+    border-radius: 10px; /*Rounded corners on the card*/
+    padding: 10px; /*Space between the card's content and its own border*/
+    margin: 10px auto; /*Space between the card's border and the wrapper's border, and centers the card horizontally*/
+    background-color: #EDF1F4; /*Background color of the card is light gray*/
+    width: 80%; /*The card takes up 80% of the width of the wrapper*/
+    color: #EDF1F4; /*Text color of the card is light gray, which is visible against the burgundy sections (see section styling)*/
 }
+
+/*Removed .card:hover for the tablet and mobile, see why in README*/
 
 /*Styling the section element on the Projects page within each article*/
 section{
@@ -127,3 +97,42 @@ section{
     margin: 5px; /*Space between the section's border and the article's border*/
     border-radius: 10px; /*Rounded corners*/
 }
+
+/*Only selects h2 headings inside <main>, so this applies only to "Keep in Touch!" and project titles*/
+main h2{
+    padding: 10px; /*Adds space between the heading text and its own border*/
+    color: #72023A; /*Sets the heading text color to burgundy for contrast against background*/
+}
+
+/*Styling the form on the "Contact Me" page*/
+form {
+    background-color:#FB05A1; /*Form background is pink*/
+    color: #03020C; /*Form text is black*/
+    padding: 10px;
+    margin: 0;
+}
+
+/*Applies to every input and textarea inside the form on Contact Me */
+input, textarea{
+    width: 90%; /*Each input field in the form takes up 90% of the form's width, so the field sizes scale with the screen*/
+}
+
+/*Styling the footer for mobile screens*/
+footer {
+  background-color: #A84D02; /*Orange background color for the footer*/
+  padding: 10px; /*Space between the footer's content and its own border*/
+  margin: 0; /*No space between the footer's border and other elements*/
+  color: #EDF1F4; /*Light gray text color for contrast*/
+}
+
+/*Same idea as the homepage footer, which has this id="homepage-footer'*/
+#homepage-footer {
+    background: linear-gradient(45deg, #72023A, #A84D02); /*Diagonal gradient from burgundy at the bottom left to orange at the top right*/
+    padding: 10px;
+}
+
+/*Links inside <address> (my email link in the footer)*/
+address a{
+    color: #EDF1F4; /*Setting email link text as light gray from the defaul blue for contrast against the footer's orange background*/
+}
+
