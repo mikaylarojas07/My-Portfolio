@@ -86,6 +86,8 @@ video {
     background-color: #EDF1F4; /*Background color of the card is light gray*/
     width: 80%; /*The card takes up 80% of the width of the wrapper*/
     color: #EDF1F4; /*Text color of the card is light gray, which is visible against the burgundy sections (see section styling)*/
+    /*Stops card content from overflowing*/
+    overflow: auto; /*Code adapted from https://www.w3schools.com/css/css_overflow.asp*/
 }
 
 /*Removed .card:hover for the tablet and mobile, see why in README*/

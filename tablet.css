@@ -87,6 +87,8 @@ video {
     margin: 20px auto;
     background-color: #EDF1F4;
     width: 70%; /*On tablets, the card now takes up 70% of the wrapper's width, allowing for a single-column design on the Projects Page*/
+    /*Stops card content from overflowing*/
+    overflow: auto; /*Code adapted from https://www.w3schools.com/css/css_overflow.asp*/
 }
 
 /*Removed the .card:hover feature for tablet and mobile, because you cannot hover on touchscreen*/

@@ -9,37 +9,37 @@ Overflow property code adapted from: https://www.w3schools.com/css/css_overflow.
 
 GUI/INTERFACE
 My webpage uses three separate CSS files, each of them linked with a media query so that only one stylesheet applies at a time. 
-The stylesheet that is applied to the corresponding html file is based on the user's screen width. 
-- style.css for laptop.desktop (screens between 960px and up)
-- tablet.css for tablets (screens between 481px and 959px)
-- mobile.css for mobile devices, ex, smartphones (screens 480px and smaller)
+The stylesheet that is applied to the corresponding HTML5 file is based on the user's screen width. 
+- style.css for laptop or desktop (screens between 960px and up)
+- tablet.css for tablets (screens between 481px and 959.9px)
+- mobile.css for mobile devices, ex, smartphones (screens 480.9px and smaller)
 
 I chose these dimensions for each view port because they match the typical range of real device widths. 
 Another reason is because I am familiar using these dimensions through lecture practice. 
 
 At each break point, elements like navigation links, cards, images, and videos resize using percentage-based widths (fluid design), rather than fixed pixel values. 
 This is so that the layout can scale up and down with each viewport range so page content does not get cut off. 
-For example, .card elements shrink from their default desktop width to 70% screen width on tablets and 90% width on mobile, and the navigation links change from links on the desktop to buttons on tablet/desktop to remain easy to tap on a screen.
+For example, .card elements grow from their default desktop screen width of 35% to 70% screen width on tablets and 90% width on mobile, and the navigation links change from links on the desktop to buttons on tablet/desktop to remain easy to tap on a screen.
 When switching from tablet to mobile, I designed my site so that the button size for the navigation links increases, giving the user larger buttons to click on when on a smaller screen. 
 I also created a different, higher-contrast colour scheme for my website when the viewport changes from desktop to tablet or mobile, so that users on smaller screens with weaker back lighting can view my page clearly.
 
-Another difference between my webpage's desktop and tablet/mobile viewing is that on desktop monitors or PCs, my projects page displays my articles in two columns of two, whereas my tablet and mobile visitors will see the projects one by one, in only one single column. 
+Another difference between my webpage's desktop and tablet/mobile viewing is that on desktop monitors or PCs, my projects page displays my articles in two columns of two (hence the project card width of 35%), whereas my tablet and mobile visitors will see the projects one by one, in only one single column. 
 I made this decision because I know that less columns are typically better when discussing smaller screens, so instead of cramming my project cards into two columns on smaller device screens, I simply made the page into one column.
 
 I also removed the hover features for tablet and mobile screens, because a feature that changes the opacity of an element when hovered over does not make sense on a touchscreen device. 
-Because I removed the .card:hover effect for tablet and mobile, I also changed the default opacity for the project card elements to 1 instead of 0.7, to increase the contrast for better viewing on smaller screens.
+Because I removed the .card:hover effect for tablet and mobile, I also changed the default opacity for the project card elements on tablet/mobile to 1 instead of 0.7, to increase the contrast for better viewing on smaller screens.
 
 One challenge I faced when defining these dimensions came to my attention during testing/resizing. 
 I noticed that when on the edge of a breakpoint (eg, at 959px or 480px), none of my CSS styling was applying at all, and it was as if I had no stylesheet linked. 
-After doing some research into these gaps, I then realized that pixels are not always integer values, which was contributing the the gap in styling when resizing along the edges of the breakpoints. 
-Since my breakpoints were initially set using whole numbers (eg, max-width: 959px, min-width: 960px), a fractional width like 959.5 would fail to match either condition, leaving a small gap because none of the stylesheets woul apply. 
+After doing some research into these gaps, I then realized that pixels are not always integer values, which was contributing to the gap in styling when resizing along the edges of the breakpoints. 
+Since my breakpoints were initially set using whole numbers (eg, max-width: 959px, min-width: 960px), a fractional width like 959.5 would fail to match either condition, leaving a small gap because none of the stylesheets would apply. 
 To fix this, I adjusted my max-width values to include a decimal (eg, 959.9px instead of 959px), successfully closing that gap, ensuring that no width falls outside all three media query ranges (desktop, tablet, mobile).
 
 
 COLOUR GRADIENTS
-My website's "Home" page contains both a linear gradient and an angle linear gradient. 
-The linear gradient can be seen in the page header, as a horizontal top-to-bottom gradient that gradually shifts from  #D7BDE2 to #A3C6A8. 
-The angled linear gradient can be seen in the page footer, as a diagonal linear gradient on a 45 degree angle that gradually shifts from #F7CAC9 to #D7BDE2
+My website's "Home" page contains both a linear gradient and an angled linear gradient. 
+The linear gradient can be seen in the homepage header, as a horizontal top-to-bottom gradient that gradually shifts from  #D7BDE2 to #A3C6A8 on desktop and from #EDF1F4, #FB05A1 on tablet and mobile. 
+The angled linear gradient can be seen in the homepage footer, as a diagonal linear gradient on a 45 degree angle that gradually shifts from #F7CAC9 to #D7BDE2 on desktop, and from #72023A, #A84D02 on tablet and mobile.
 
 
 COLOUR SCHEME
@@ -47,7 +47,7 @@ For my desktop webpage, I used a custom colour scheme from Adobe with the follow
 I chose this colour scheme because it is cohesive and the colours complement one another. I used Adobe's "Explore Colour Palettes" feature and searched for a colour scheme that I thought would bring my page to life.
 The neutral shades allow the more striking colours to pop, and the boldness makes my page look unique and aesthetically pleasing. 
 
-However, for my tablet and mobile screen visitors, I used a different colour scheme from Adobe, one that is higher contrast and easier to view on smaller screens or in outdoor settings. 
+However, for my tablet and mobile screen visitors, I used a different colour scheme from Adobe, one that is higher contrast and easier to view on smaller screens and in outdoor settings. 
 I used the following colours for this second colour pallette: #72023A #FB05A1 #03020C #EDF1F4 #A84D02. 
 The name of this pallette on Adobe.com is called "Calender - High Contrast". I discovered it by searching up "high contrast colour pallettes", so I would find the right blend of colours. 
 
