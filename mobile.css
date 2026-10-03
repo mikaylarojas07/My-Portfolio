@@ -105,7 +105,7 @@ nav a{
 
 /*Main content container div*/
 #wrapper{
-    width: 95%; /*The wrapper will take up 90% of the browser window's width, slightly larger than tablet.css*/
+    width: 95%; /*The wrapper will take up 95% of the browser window's width, slightly larger than tablet.css*/
     margin: auto;
     background-color:#FB05A1; 
 }
