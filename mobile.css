@@ -135,6 +135,6 @@ footer {
 
 /*Links inside <address> (my email link in the footer)*/
 address a{
-    color: #EDF1F4; /*Setting email link text as light gray from the defaul blue for contrast against the footer's orange background*/
+    color: #EDF1F4; /*Setting email link text as light gray from the default blue for contrast against the footer's orange background*/
 }
 

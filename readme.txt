@@ -2,10 +2,10 @@ Assignment 1 README file
 Mikayla Rojas #101023576
 
 CITATIONS
-Phone number input validation adapted from: https://www.w3schools.com/tags/att_input_type_tel.asp, published by Refsnes Data
-Media Query integer strategy to avoid gaps adapted from: https://stevefenton.co.uk/blog/2023/05/unintentional-media-query-gaps/, written by Steve Fenton
-Profile image code adapted from: https://www.w3schools.com/html/html_images.asp-->, published by Refsnes Data
-Overflow property code adapted from: https://www.w3schools.com/css/css_overflow.asp, Refsnes Data
+Phone number input validation adapted from: https://www.w3schools.com/tags/att_input_type_tel.asp published by Refsnes Data
+Media Query integer strategy to avoid gaps adapted from: https://stevefenton.co.uk/blog/2023/05/unintentional-media-query-gaps/ written by Steve Fenton
+Profile image code adapted from: https://www.w3schools.com/html/html_images.asp published by Refsnes Data
+Overflow property code adapted from: https://www.w3schools.com/css/css_overflow.asp Refsnes Data
 
 GUI/INTERFACE
 My webpage uses three separate CSS files, each of them linked with a media query so that only one stylesheet applies at a time. 
